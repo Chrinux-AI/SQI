@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="calculateCircle()">Area of a circle</button>
+    <button onclick="calculateTriangle()">Area of a triangle</button>
+    <button onclick="calculateBMI()">BMI</button>
+    <button onclick="calculateSquare()">Area of a square</button>
+    <button onclick="calculateTrapezium()">Area of a trapezium</button>
+    <button onclick="calculateRhombus()">Area of a rhombus</button>
+    <button onclick="calculateQuadrilateral()">Area of a Quadrilateral</button>
+    <button onclick="calculateParallelogram()">Area of a Parallelogram</button>
+
+    <script>
+        const calculateCircle = () => {
+            const pi = 22 / 7
+            const radius = prompt('Enter the radius of the circle')
+            const answer = (pi * (radius ** 2))
+            console.log(answer);
+        }
+        const calculateTriangle = () => {
+            const base = prompt('Enter the base of the triangle')
+            const height = prompt('Enter the height of the triangle')
+            const answer = (1 / 2 * (base * height))
+            console.log(answer)
+        }
+        const calculateBMI = () => {
+            const mass = prompt('Enter the mass')
+            const height = prompt('Enter the height')
+            const answer = (mass / (distance ** 2))
+            console.log(answer)
+        }
+        const calculateSquare = () => {
+            const length = prompt('Enter the length of the square')
+            const answer = length ** 2
+            console.log(answer)
+        }
+        const calculateTrapezium = () => {
+            const sideA = prompt('Enter sideA of the trapezium')
+            const sideB = prompt('Enter sideB of the trapezium')
+            const height = prompt('Enter the height')
+            const answer = 1 / 2 * (sideA + sideB) * height
+            console.log(answer)
+        }
+        const calculateRhombus = () => {
+            const length = prompt('Enter the length of the rhombus')
+            const breadth = prompt('Enter the breadth of the rhombus')
+            const answer = length * breadth
+            console.log(answer);
+        }
+        const calculateQuadrilateral = () => {
+            const length = prompt('Enter the length of the quadrilateral')
+            const breadth = prompt('Enter the breadth of the quadrilateral')
+            const answer = length * breadth
+            console.log(answer)
+        }
+        const calculateParallelogram = () => {
+            const length = prompt('Enter the length of the parallelogram')
+            const breadth = prompt('Enter the breadth of the Paralleogram')
+            const answer = length * breadth
+            console.log(answer)
+        }
+        
+
+    </script>
+</body>
+
+</html>
